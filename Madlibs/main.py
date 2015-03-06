@@ -19,25 +19,28 @@ age = raw_input("Enter your age: ")
 
 city = raw_input("What city were you born in? ")
 
-num1 = raw_input("Choose a number between 1 and 10: ")
+num1 = int(input("Enter first number between 1 and 10: "))
 
-num2 = raw_input("Choose another number between 1 and 5: ")
+num2 = int(input("Enter second number between 1 and 5: "))
+
 
 
 #Array of Fairy Tale Creatures
 
 creatures = ["Dwarfs", "Elves", "Fairies", "Gnomes", "Ogres", "Trolls"]
 
-#Dictionary of Classic Fairytale Characters
+#Dictionary of Magical Transportation Devices
 
-travel = dict() #creates dictionary object
-travel = {"Wizard of Oz":"Ruby Red Slippers", "Jack and the Beanstock":"Magic Beans", "Narnia":"Magic Wardrobe"}
+travel = dict()
+
+travel['opt1'] = "ruby red slippers"
+travel['opt2'] = "magic beans"
+travel['opt3'] = "magic wardrobe"
 
 
 #Calculation to figure number of 'Minutes'
 
-minutes = num1 * num2
-
+minutes = num1*num2
 
 
 
@@ -63,7 +66,7 @@ elif gender == "Female":
 #TheStory -------
 
 
-message = '''
+madlib = '''
 Once upon a time, in a kingdom far away from her own land {pronoun}, awoke with a daze. {pronoun} looked up and
 didn't recognize where {pronoun} was at, it was a strange land! After walking for {minutes} minutes, {pronoun} came upon
 a dirt road and saw a horse and carriage. {pronoun} waved to get this persons attention.
@@ -79,11 +82,11 @@ a dirt road and saw a horse and carriage. {pronoun} waved to get this persons at
 
 {friend_name} answered "The Enchanted Forest of course!, What land are you from?"
 
-{friend_name} had climbed on to the carriage, and quickly replied "The ENCHANTED FOREST! I need to find some
+{friend_name} had climbed on to the carriage, and quickly replied "The ENCHANTED FOREST! I need to find some {travel}
 
 
 '''
 
-message = message.format(**locals())
+madlib = madlib.format(**locals())
 
-print(message)
+print madlib
