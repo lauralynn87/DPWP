@@ -10,13 +10,13 @@ print("I would like to tell you an original fairytale story, but first I need yo
 # User Inputs
 
 char1 = raw_input("Enter your first name: ")
-char2= raw_input("Enter a friend's name: ")
+char2= raw_input("Enter a male friend's name: ")
 gender = raw_input("Enter your gender (Male or Female): ")
-age = int(input("What is your age? "))
 city = raw_input("What city were you born in? ")
 num1 = int(input("Enter first number between 1 and 10: "))
 num2 = int(input("Enter second number between 1 and 5: "))
-
+char3 = raw_input("Name of your favorite male fairy tale character? ")
+story = raw_input("Favorite Disney fairy tale? ")
 
 
 #Array of Fairy Tale Creatures
@@ -36,13 +36,6 @@ travel['opt3'] = "magic wardrobe"
 
 minutes = num1 * num2
 
-#Another Calculation for the story - determining a characters age.
-
-age2 = age*2
-
-
-
-
 
 #Conditional Statements for Gender on rather to use he/she and boy/girl in the story.
 
@@ -59,8 +52,6 @@ if gender == "Male":
     pronoun2 = "boy"
 elif gender == "Female":
     pronoun2 = "girl"
-
-
 
 
 #TheStory -------
@@ -96,8 +87,26 @@ After what seemed like hours, they finally arrived at the tavern. {char2} said "
 {char1} said "Thank you my friend, I understand."
 
 {char1} stepped into the tavern, and couldn't believe what she say. Never before had she seen real live {creatures} and other mystical creatures before.
+{char1} see's {char3} in the corner by himself and recognizes him from {story} that {pronoun} watched as a child.
+
+{char1} goes over too {char3} and says "Hi my name is {char1} and I am lost. I am from another world and need to find my way home. I've heard of tales of your {story} in my world, I was hoping you would help me. I am looking for anything like {travel[opt1]}, {travel[opt2]}, or {travel[opt3]}..Can you help me?" {char1} stops rambling and finally looks at {char3} closely who is shocked, but smirking sort of.
+
+{char3} says "Well it just so happens that I have a pair of {travel[opt1]}, but if you've heard of me, then you know I like making deals, and everything comes at a price... "
+
+{char1} wairy of this person, did know this but was desperate to get home. "What do you want?"
+
+{char3} "That is the beauty of it. For now a I.O.U., I have to come to that world of yours one day, and when I do I'm sure I'll need some assistance. I'll come to collect. Be ready when I do."
+
+The next thing {char1} saw was a note that said "Place the slippers on and repeat this 3x"
 
 
+{char2} Shouts "Hey wake up {char1}!"
+
+{char1} awakes with a jolt and says "Huh?!"
+
+{char2} laughing "You fell asleep watching Once Upon a Time again didn't you?"
+
+"I guess so" {char1} says kinda of dazed, and still sleepy. About to turn back over and go back to sleep, she looks down and notice the red slippers on her feet.
 
 '''
 
