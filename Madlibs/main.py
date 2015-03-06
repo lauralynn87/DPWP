@@ -10,7 +10,7 @@ print("I would like to tell you an original fairytale story, but first I need yo
 # User Inputs
 
 char1 = raw_input("Enter your first name: ")
-char2= raw_input("Enter a male friend's name: ")
+char2 = raw_input("Enter a male friend's name: ")
 gender = raw_input("Enter your gender (Male or Female): ")
 city = raw_input("What city were you born in? ")
 num1 = int(input("Enter first number between 1 and 10: "))
@@ -68,7 +68,7 @@ After walking for approximately {minutes} minutes, {pronoun} came upon a dirt ro
 
 {char1} replied "My name is {char1}, I am lost - can you help me?"
 
-{friend_name} answered "There is a local tavern north, I am headed that way I will drop you off." {char2} not wanting
+{char2} answered "There is a local tavern north, I am headed that way I will drop you off." {char2} not wanting
 any trouble said "That is the best I can offer you."
 
 {char1} replied "Thank you so much! Can you tell me where I am at, what land is this?"
