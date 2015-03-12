@@ -22,9 +22,13 @@ class MainHandler(webapp2.RequestHandler):
 
         '''
 
-        #Shows Thank You message upon form submission
-        form_thankyou_open = '''
+        #Shows confirmation of information entered
+        form_confirm_open = '''
          '''
+
+        #Closing of Confirmation Area
+        form_confirm_close = '''
+        '''
 
         # IF form is filled out:
         if self.request.GET:
@@ -43,13 +47,19 @@ class MainHandler(webapp2.RequestHandler):
                 addon = add_ons[i]
                 form_addons += "<li>" + addon + ", " + "</li>"
 
+            #Formats form variables
+            form_confirm_open = form_confirm_open.format(**locals())
+            form_confirm_close = form_confirm_close.format(**locals())
 
+            #Holds full form
+            form_submitted = form_confirm_open + form_addons + form_confirm_close
 
+            #Prints page with form data
+            self.response.write(page_head + form_submitted + page_close)
 
-
-
-
-
+            #ELSE Print the form
+        else:
+            self.response.write(page_head + page_form + page_close)
 
 
 #DO NOT REMOVE - NEEDED FOR GOOGLE APP ENGINE LAUNCHER
