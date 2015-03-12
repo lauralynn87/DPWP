@@ -24,10 +24,25 @@ class MainHandler(webapp2.RequestHandler):
 
         #Shows confirmation of information entered
         form_confirm_open = '''
+        <h2>Your Request has been submitted!</h2>
+           <p>Please review the details you submitted below. If you need to make any changes please simply resubmit a new form by pressing <a href="javascript:history.back()">back</a></p>
+           <div id="confirm">
+               <ul>
+                   <li><strong>Name: </strong>{first_name}</li>
+                   <li><strong>Email: </strong>{email}</li>
+                   <li><strong>Subject: </strong>{subject}</li>
+                   <li><strong>Project Type: </strong>{project}</li>
+                   <li><strong>Optional Add-Ons: </strong>
+                        <ul>
          '''
 
         #Closing of Confirmation Area
         form_confirm_close = '''
+                        </ul>
+                   </li>
+                   <li><strong>Project Details:</strong>{details}</li>
+               </ul><!-- End main list -->
+            </div><!-- End DIV 'confirm' -->
         '''
 
         # IF form is filled out:
@@ -38,6 +53,7 @@ class MainHandler(webapp2.RequestHandler):
             subject = self.request.GET['subject']
             project = self.request.GET['project']
             add_ons = self.request.get_all('add_ons')
+            details = self.request.GET['details']
 
             form_addons = '''
             '''
