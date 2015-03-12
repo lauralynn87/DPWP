@@ -8,9 +8,29 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        #self.response.write('Hello world!')
 
-        
+        #page_head variable to hold HTML Header Portion
+        page_head = '''
+
+
+
+        '''
+        #Holds HTML FORM
+        page_form = '''
+
+
+
+        '''
+
+        #Holds HTML Closing Statements
+         page_close = '''
+
+
+
+        '''
+
+
 
 
 #DO NOT REMOVE - NEEDED FOR GOOGLE APP ENGINE LAUNCHER
