@@ -10,6 +10,10 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         self.response.write('Hello world!')
 
+        
+
+
+#DO NOT REMOVE - NEEDED FOR GOOGLE APP ENGINE LAUNCHER
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)
