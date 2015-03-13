@@ -28,7 +28,12 @@ class MainHandler(webapp2.RequestHandler):
 
         #Holds HTML Closing Statements
         page_close = '''
- 
+            <footer>
+		        <p>&copy;Copyright 2015 - All Rights Reserved.</p>
+	        </footer>
+        </div> <!-- ENDS FORM CONTAINER -->
+        </body>
+        </html>
         '''
 
         #Shows confirmation of information entered
