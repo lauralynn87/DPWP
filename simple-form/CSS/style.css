@@ -1,0 +1,111 @@
+
+/* Name: Laura Moser
+Class: Design Patterns for Web Programming
+Assignment: Simple Form (Week 2)
+Date: 03/12/15 */
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,600,900,100);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:100,300,500,700);
+
+*{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+
+body{
+  background: url(../images/bg1.jpg) #a9b89e;
+      font-family: 'Open Sans', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  font-size:12px;
+  color:#C4BCB0;
+}
+
+li{
+	list-style-type: none;
+}
+
+h1{
+	font-size: 34px;
+	color:#333;
+}
+
+h2{
+	color: #56c9ad;
+}
+
+.container{
+    width: 600px;
+  margin: 100px auto;
+  padding:50px;
+  border: 1px solid rgba(0,0,0,0.1);
+  -webkit-box-shadow:0 1px 2px rgba(0,0,0,0.2);
+  background:#fff;
+
+}
+
+textarea, select, input[type="email"], input[type="text"],
+input[type="password"]{
+  background:#EAE6E1;
+  border:0;
+  font-weight:bold;
+  padding:10px;
+  border-radius:3px;
+  width:100%;
+  margin:5px 0;
+  outline:medium none;
+  color:#838383;
+}
+input[type="checkbox"]{
+  -webkit-appearance:none;
+  width:10px;
+  height:10px;
+  position:relative;
+  outline:medium none;
+  margin-right:10px;
+}
+input[type="checkbox"]::before{
+  width:9px;
+  height:9px;
+  content:"";
+  display:block;
+  border:3px solid #C4BCB0;
+  border-radius: 9px;
+  position:absolute;
+}
+input[type="checkbox"]:checked::after{
+  width:5px;
+  height:5px;
+  content:"";
+  display:block;
+  background: #C4BCB0;
+  border-radius: 5px;
+  position:absolute;
+  left:5px;
+  top:5px;
+}
+input[type="submit"]{
+  display:block;
+  padding:10px;
+  background:#50BFA4;
+  border:0;
+  border-radius:3px;
+  font-weight:bold;
+  width:100%;
+  color:#fff;
+  cursor:pointer;
+  -webkit-transition:all 0.3s;
+  -moz-transition:all 0.3s;
+  transition:all 0.3s;
+}
+input[type="submit"]:hover{
+  background:#58CCB0;
+}
+label {
+    display: block;
+    margin-top: 8px;
+}
+.details{
+	margin-top: 15px;
+}
