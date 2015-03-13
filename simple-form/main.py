@@ -11,15 +11,24 @@ class MainHandler(webapp2.RequestHandler):
         #page_head variable to hold HTML Header Portion
         page_head = '''
 
+        <!DOCTYPE html>
+        <html>
+        <head>
+	        <link href="css/style.css" rel="stylesheet" type="text/css">
+	        <title>Hire Me.</title>
+        </head>
+        <body>
+
         '''
 
         #Holds HTML Form
         page_form = '''
+
         '''
 
         #Holds HTML Closing Statements
         page_close = '''
-
+ 
         '''
 
         #Shows confirmation of information entered
