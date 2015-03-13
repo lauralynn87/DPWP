@@ -14,7 +14,7 @@ class MainHandler(webapp2.RequestHandler):
         <!DOCTYPE html>
         <html>
         <head>
-	        <link href="css/style.css" rel="stylesheet" type="text/css">
+	        <link href="CSS/style.css" rel="stylesheet" type="text/css">
 	        <title>Hire Me.</title>
         </head>
         <body>
@@ -23,7 +23,32 @@ class MainHandler(webapp2.RequestHandler):
 
         #Holds HTML Form
         page_form = '''
+        <div class="container">
+  	    <h1>Hire Me</h1>
 
+	    <form method="GET" action="">
+
+	    	<label>Name:</label>
+	       	<input class="textfield" type="text" name="first_name" placeholder="Name">
+	       	<label>Email:</label>
+	       	<input class="textfield" type="email" name="email" input="email" placeholder="Email">
+	       	<label>Subject:</label>
+	       	<input class="textfield" type="text" name="subject" placeholder="Subject">
+	       	<label>Choose Project Type:</label>
+	       	<select name="project" id="project">
+	            <option value="One Page Website">One Page Website</option>
+	            <option value="Multi-Page Website">Multi-Page Website</option>
+	            <option value="E-Commerce Website">E-Commerce Website</option>
+	       	</select>
+	       	<label>Optional Add-Ons:</label>
+            <label class="checkbox_label"><input type="checkbox" name="add_ons" value="SEO">SEO</label>
+            <label class="checkbox_label"><input type="checkbox" name="add_ons" value="Social Media Setup">Social Media Setup</label>
+            <label class="checkbox_label"><input type="checkbox" name="add_ons" value="Logo Design">Logo Design</label>
+  			<label class="details">Project Details:</label>
+			<textarea class="message-box" name="details" placeholder="Project Details"></textarea>
+	       <input type="submit" value="Submit" id="Submit">
+
+    	</form>
         '''
 
         #Holds HTML Closing Statements
@@ -38,25 +63,28 @@ class MainHandler(webapp2.RequestHandler):
 
         #Shows confirmation of information entered
         form_confirm_open = '''
-        <h2>Your Request has been submitted!</h2>
-           <p>Please review the details you submitted below. If you need to make any changes please simply resubmit a new form by pressing <a href="javascript:history.back()">back</a></p>
-           <div id="confirm">
+        <div class="container">
+	        <h2>Your Request has been submitted!</h2>
+            <p>Please review the details you submitted below. If you need to make any changes please simply resubmit a new form by pressing <a href="javascript:history.back()">back</a></p>
                <ul>
-                   <li><strong>Name: </strong>{first_name}</li>
-                   <li><strong>Email: </strong>{email}</li>
-                   <li><strong>Subject: </strong>{subject}</li>
-                   <li><strong>Project Type: </strong>{project}</li>
-                   <li><strong>Optional Add-Ons: </strong>
-                        <ul>
+                 <li><strong>Name: </strong>{first_name}</li>
+                 <li><strong>Email: </strong>{email}</li>
+                 <li><strong>Subject: </strong>{subject}</li>
+                 <li><strong>Project Type: </strong>{project}</li>
+                 <li><strong>Optional Add-Ons: </strong>
+                <ul>
          '''
 
         #Closing of Confirmation Area
         form_confirm_close = '''
-                        </ul>
-                   </li>
-                   <li><strong>Project Details:</strong>{details}</li>
-               </ul><!-- End main list -->
-            </div><!-- End DIV 'confirm' -->
+                </li>
+                   <li><strong>Project Details:</strong>{details}</li> <!-- This is from a 'text area' meaning the message could be a paragraph.-->
+               </ul>
+
+            <footer>
+                    <p>&copy;Copyright 2015 - All Rights Reserved.</p>
+            </footer>
+        </div>
         '''
 
         # IF form is filled out:
