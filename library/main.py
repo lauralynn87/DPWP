@@ -8,7 +8,9 @@ Date: 03/18/15
 
 import webapp2
 
+#Necessary Imports
 from pages import Form
+from library import TvSize
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
@@ -21,9 +23,10 @@ class MainHandler(webapp2.RequestHandler):
             resolution = self.request.GET['resolution']
             distance = self.request.GET['distance']
 
+        #Create Instance to send info to library
         lib = TvSize()
-            lib.distance = distance
-            lib.resolution = resolution
+        lib.distance = distance
+        lib.resolution = resolution
 
 
 
