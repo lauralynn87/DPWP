@@ -8,9 +8,10 @@ Date: 03/18/15
 
 import webapp2
 
-import Form from pages
+from pages import Form
 
 class MainHandler(webapp2.RequestHandler):
+    def get(self):
         f = Form()
 
         #Gets the data the user entered from form
@@ -19,6 +20,11 @@ class MainHandler(webapp2.RequestHandler):
             email = self.request.GET['email']
             resolution = self.request.GET['resolution']
             distance = self.request.GET['distance']
+
+    lib = TvSize()
+        lib.distance = distance
+        lib.resolution = resolution
+
 
 
 #do not write below this line

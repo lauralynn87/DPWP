@@ -7,17 +7,17 @@ Date: 03/18/15
 
 class TvSize(object):
     def __init__(self):
+        #define variables // will need to make private before turning in.
         self.distance = 0
         self.resolution = ""
 
-
     def min_size(self):
-        #divide data by 3
+        #divide user data by 3
         min = distance / 3
         return value min
 
     def max_size(self):
-        #divide data by 1.5
+        #divide user data by 1.5
         max = distance / 1.5
         return value max
 
