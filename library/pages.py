@@ -34,7 +34,6 @@ class Form(object):
 
       <label for="Resolution">Resolution</label>
       <select id="resolution" name="resolution">
-        <option value="">[select an option]</option>
         <option value="480p">480p</option>
         <option value="720p">720p</option>
         <option value="1080p">1080p</option>
