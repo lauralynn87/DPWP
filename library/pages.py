@@ -26,7 +26,7 @@ class Form(object):
 
             <form method="GET" action="">
 
-            <label for="name">Name</label><input type="text" name="name" id="firstname"/></div>
+            <label for="name">Name</label><input type="text" name="name" id="name"/></div>
 
    <label for="email">Email</label><input type="text" name="email" id="email"/></div>
 

@@ -17,7 +17,7 @@ class MainHandler(webapp2.RequestHandler):
         f = Form()
 
         #Gets the data the user entered from form
-        if f.request.GET:
+        if self.request.GET:
             name = self.request.GET['name']
             email = self.request.GET['email']
             resolution = self.request.GET['resolution']

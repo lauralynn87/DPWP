@@ -5,6 +5,8 @@ Assignment: Reusable Library (Week 3)
 Date: 03/18/15
 '''
 
+
+
 class TvSize(object):
     def __init__(self):
         #define variables // will need to make private before turning in.
@@ -27,3 +29,4 @@ class TvSize(object):
         if distance > 42:
             print("You need to upgrade to 4K Ultra HD for the best Experience!")
         elif resolution
+            pass
