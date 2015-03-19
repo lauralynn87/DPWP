@@ -7,7 +7,7 @@ Date: 03/18/15
 
 class TvSize(object):
     def __init__(self):
-        self.distance = ""
+        self.distance = 0
         self.resolution = ""
 
 
