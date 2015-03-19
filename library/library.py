@@ -7,7 +7,9 @@ Date: 03/18/15
 
 class TvSize(object):
     def __init__(self):
-    pass
+        self.distance = ""
+        self.resolution = ""
+
 
     def min_size(self):
         #divide data by 3
