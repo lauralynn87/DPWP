@@ -21,9 +21,9 @@ class MainHandler(webapp2.RequestHandler):
             resolution = self.request.GET['resolution']
             distance = self.request.GET['distance']
 
-    lib = TvSize()
-        lib.distance = distance
-        lib.resolution = resolution
+        lib = TvSize()
+            lib.distance = distance
+            lib.resolution = resolution
 
 
 
