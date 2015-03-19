@@ -13,8 +13,9 @@ class Page():
                 <body>
                 '''
 
-            self.body = """ """
-            self.__close = '''
+        self.body = ''' '''
+        self.__close = '''
+
                 </body>
             </html>
             '''
