@@ -5,7 +5,7 @@ Assignment: Reusable Library (Week 3)
 Date: 03/18/15
 '''
 
-class Form():
+class Form(object):
     def __init__(self):
         self.css = "css/styles.css"
         self.__head = '''
@@ -55,7 +55,7 @@ class Form():
             '''
 
 
-class Results():
+class Results(object):
     def __init__(self):
         self.body = """
 
