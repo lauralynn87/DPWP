@@ -1,4 +1,4 @@
-class Page():
+class Form():
     def __init__(self):
         self.__title = "Welcome!"
         self.css = "css/styles.css"
@@ -19,6 +19,14 @@ class Page():
                 </body>
             </html>
             '''
+
+
+class Results():
+    def __init__(self):
+        self.body = """
+        """
+
+
 
     def print_out(self):
         all = self.__head + self.body + self.__close

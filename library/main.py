@@ -5,14 +5,19 @@ Assignment: Reusable Library (Week 3)
 Date: 03/18/15
 '''
 #
+
 import webapp2
 
 class MainHandler(webapp2.RequestHandler):
-    def get(self):
-        self.response.write('Hello world!')
 
 
-
+    """
+        if self.request.GET:
+            name = self.request.GET['name']
+            email = self.request.GET['email']
+            resolution = self.request.GET['resolution']
+            distance = self.request.GET['distance']
+    """
 
 
 
