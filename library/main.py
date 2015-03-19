@@ -8,17 +8,17 @@ Date: 03/18/15
 
 import webapp2
 
+import Form from pages
+
 class MainHandler(webapp2.RequestHandler):
+        f = Form()
 
-
-    """
-        if self.request.GET:
+        #Gets the data the user entered from form
+        if f.request.GET:
             name = self.request.GET['name']
             email = self.request.GET['email']
             resolution = self.request.GET['resolution']
             distance = self.request.GET['distance']
-    """
-
 
 
 #do not write below this line
