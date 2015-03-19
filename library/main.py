@@ -22,11 +22,10 @@ class MainHandler(webapp2.RequestHandler):
             email = self.request.GET['email']
             resolution = self.request.GET['resolution']
             distance = self.request.GET['distance']
-
         #Create Instance to send info to library
-        lib = TvSize()
-        lib.distance = distance
-        lib.resolution = resolution
+            lib = TvSize()
+            lib.distance = distance
+            lib.resolution = resolution
 
 
 
