@@ -29,31 +29,31 @@ class Form(object):
                 </div>
 
             <div class="row body">
-            <form class='pure-form pure-form-stacked' id='info' method='POST'>
+            <form class="pure-form pure-form-stacked" id="info" method="GET">
              <fieldset>
-                <div class='input-container'>
+                <div class="input-container">
                     <label>Name</label>
-                    <input id='name' name='name' placeholder='name' type='text'>
+                    <input id="name" name="name" placeholder="name" type="text">
                 </div>
-                <div class='input-container'>
+                <div class="input-container">
                     <label>Email</label>
-                    <input id='email' name='email' placeholder='Email' type='email'>
+                    <input id="email" name="email" placeholder="Email" type="email">
                 </div>
-                <div class='input-container'>
+                <div class="input-container">
                     <label>Distance From your TV(inches)</label>
-                    <input id='distance' name='distance' placeholder='distance' type='text'>
+                    <input id="distance" name="distance" placeholder="distance" type="text">
                 </div>
                 <div>
                     <label for="howfound">Preferred Resolution</label>
-                        <select id="notrequiredselect" name="resolution" class="select">
-                            <option value="480p">480p</option>
-                            <option value="720p">720p</option>
-                            <option value="720p">1080p</option>
-                            <option value="720p">4K Ultra</option>
+                        <select  name="resolution" class="select">
+                            <option value="480p" name="480p">480p</option>
+                            <option value="720p" name="720p">720p</option>
+                            <option value="1080p" name="1080p">1080p</option>
+                            <option value="4K Ultra" name="4K Ultra">4K Ultra</option>
                         </select>
                 </div>
 
-            <button class='pure-button notice' id='submit' type='submit'>Submit</button>
+            <button class="pure-button notice" id="submit" type="submit">Submit</button>
          </fieldset>
 
             </form></div>
@@ -78,26 +78,38 @@ class Results(object):
         self.head = """
         <!DOCTYPE HTML>
         <html>
-            <head>
-                <title></title>
-                <link href="{self.css}" rel="stylesheet" type="text/css" />
-            </head>
-                <body>
+        <head>
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+             <title>Determine My TV Size</title>
+             <link rel="stylesheet" type="text/css" href="{self.css}" media="screen"/>
+
+        </head>
+        <body>
+        <div class="container">
                 """
         self.body = """
-         <h2>Thank you for your submission!</h2>
-            <p>Please review your results below:</p>
-               <ul>
-                 <li><strong>Minimum TV Size:</strong>{new_min_size}</li>
-                 <li><strong>Maximum TV Size: </strong>{new_max_size}</li>
-                 <li><strong>Resolution Check:</strong>{resolution}</li>
-                <ul>
-            </br>
-            <p>These results were based on your viewing distance of {distance} inches.</p>
+            <div class="row header">
+                <h1>Determine My TV Size </h1>
+            </div>
+            <div class="row body">
+            <h3>Thank you {name}! Your Results are below. </h3>
+
+            <p>The Minimum TV size you should have is: <span>result here</span></p>
+
+            <p>The Maximum TV Size you can have is:<span>result here</span></p>
+
+            <p>Resolution Check:<span>{resolution}</span></p>
+
+            <p>This information is based on the viewing distance of <span>{distance}</> inches.</p>
+
+            <p class="happy">Happy Shopping!</p>
+            </div>
+
             """
         self.close = """
-                </body>
-            </html>
+              </div>
+        </body>
+        </html>
             """
 
     #Function to print results in the browser
