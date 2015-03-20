@@ -8,8 +8,7 @@ Date: 03/18/15
 class Form(object):
     def __init__(self):
         self.css = "css/styles.css"
-        self.head = '''
-
+        self.head = """
         <!DOCTYPE HTML>
         <html>
             <head>
@@ -17,9 +16,9 @@ class Form(object):
                 <link href="{self.css}" rel="stylesheet" type="text/css" />
             </head>
                 <body>
-                '''
+                """
 
-        self.body = '''
+        self.body = """
 
             <h1>Determine My TV Size </h1>
             <h3>Fill out the form below to learn more!</h3>
@@ -41,21 +40,20 @@ class Form(object):
              </select>
              <input id="submit" type="submit"/><input type="reset" />
             </form>
-        '''
-        self.close = '''
+        """
+        self.close = """
                 </body>
             </html>
-            '''
+            """
 
-        def print_out(self):
-            all = self.head + self.body + self.close
-            all = all.format(**locals())
-            return all
-
+    def print_out(self):
+        all = self.head + self.body + self.close
+        all = all.format(**locals())
+        return all
 
 class Results(object):
     def __init__(self):
-        self.body_two = """
+        self.body = """
          <h2>Thank you for your submission!</h2>
             <p>Please review your results below:</p>
                <ul>
@@ -65,5 +63,4 @@ class Results(object):
                 <ul>
             </br>
             <p>These results were based on your viewing distance of {distance} inches.</p>
-
-    """
+            """
