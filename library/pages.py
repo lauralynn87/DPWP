@@ -46,6 +46,7 @@ class Form(object):
             </html>
             """
 
+    #Function to print out the form to the browser
     def print_out(self):
         all = self.head + self.body + self.close
         all = all.format(**locals())
@@ -53,6 +54,16 @@ class Form(object):
 
 class Results(object):
     def __init__(self):
+        self.css = "css/styles.css"
+        self.head = """
+        <!DOCTYPE HTML>
+        <html>
+            <head>
+                <title></title>
+                <link href="{self.css}" rel="stylesheet" type="text/css" />
+            </head>
+                <body>
+                """
         self.body = """
          <h2>Thank you for your submission!</h2>
             <p>Please review your results below:</p>
@@ -64,3 +75,13 @@ class Results(object):
             </br>
             <p>These results were based on your viewing distance of {distance} inches.</p>
             """
+        self.close = """
+                </body>
+            </html>
+            """
+
+    #Function to print results in the browser
+    def print_out(self):
+        all = self.head + self.body + self.close
+        all = all.format(**locals())
+        return all

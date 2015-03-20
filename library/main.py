@@ -17,15 +17,13 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         f = Form()
         r = Results
-        
+
         #Gets the data the user entered from form
         if self.request.GET:
             name = self.request.GET['name']
             email = self.request.GET['email']
             resolution = self.request.GET['resolution']
             distance = self.request.GET['distance']
-            self.response.write(f.print_out())
-
 
         #Create Instance to send info to library
             lib = TvSize()
@@ -33,6 +31,10 @@ class MainHandler(webapp2.RequestHandler):
             lib.resolution = resolution
             new_min_size = lib.min_size() #creating a variable min_size
             new_max_size = lib.max_size() #creating a variable max_size
+
+            #Prints page with form data
+            self.response.write(r.print_out())
+
         else:
             self.response.write(f.print_out())
 
