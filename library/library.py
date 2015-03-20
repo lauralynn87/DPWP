@@ -13,12 +13,12 @@ class TvSize(object):
 
     def min_size(self):
         #divide user data by 3
-        min = self._distance / 3
+        min = int(self.distance)/3
         return min
 
     def max_size(self):
         #divide user data by 1.5
-        max = self._distance / 1.5
+        max = int(self.distance)/1.5
         return max
 
     def reso(self):

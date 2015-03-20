@@ -94,9 +94,9 @@ class Results(object):
             <div class="row body">
             <h3>Thank you {name}! Your Results are below. </h3>
 
-            <p>The Minimum TV size you should have is: <span>result here</span></p>
+            <p>The Minimum TV size you should have is: <span>{new_min_size}</span></p>
 
-            <p>The Maximum TV Size you can have is:<span>result here</span></p>
+            <p>The Maximum TV Size you can have is:<span>{new_max_size}</span></p>
 
             <p>Resolution Check:<span>{resolution}</span></p>
 
