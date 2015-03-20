@@ -73,7 +73,8 @@ class Form(object):
 
 
 class Results(object):
-    def __init__(self):
+    def __init__(self, name):
+        result_name = self.name
         self.css = "css/styles.css"
         self.head = """
         <!DOCTYPE HTML>
@@ -92,7 +93,7 @@ class Results(object):
                 <h1>Determine My TV Size </h1>
             </div>
             <div class="row body">
-            <h3>Thank you {name}! Your Results are below. </h3>
+            <h3>Thank you {self.name}! Your Results are below. </h3>
 
             <p>The Minimum TV size you should have is: <span>{new_min_size}</span></p>
 
