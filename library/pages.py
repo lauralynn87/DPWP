@@ -11,46 +11,66 @@ class Form(object):
         self.head = """
         <!DOCTYPE HTML>
         <html>
-            <head>
-                <title></title>
-                <link href="{self.css}" rel="stylesheet" type="text/css" />
-            </head>
-                <body>
+        <head>
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+             <title>Determine My TV Size</title>
+             <link rel="stylesheet" type="text/css" href="{self.css}" media="screen"/>
+
+        </head>
+        <body>
+        <div class="container">
                 """
 
         self.body = """
 
-            <h1>Determine My TV Size </h1>
-            <h3>Fill out the form below to learn more!</h3>
+                   <div class="row header">
+                <h1>Determine My TV Size </h1>
+                 <h3>Fill out the form below to learn more!</h3>
+                </div>
 
-            <form method="GET" action="">
+            <div class="row body">
+            <form class='pure-form pure-form-stacked' id='info' method='POST'>
+             <fieldset>
+                <div class='input-container'>
+                    <label>Name</label>
+                    <input id='name' name='name' placeholder='name' type='text'>
+                </div>
+                <div class='input-container'>
+                    <label>Email</label>
+                    <input id='email' name='email' placeholder='Email' type='email'>
+                </div>
+                <div class='input-container'>
+                    <label>Distance From your TV(inches)</label>
+                    <input id='distance' name='distance' placeholder='distance' type='text'>
+                </div>
+                <div>
+                    <label for="howfound">Preferred Resolution</label>
+                        <select id="notrequiredselect" name="resolution" class="select">
+                            <option value="480p">480p</option>
+                            <option value="720p">720p</option>
+                            <option value="720p">1080p</option>
+                            <option value="720p">4K Ultra</option>
+                        </select>
+                </div>
 
-            <label for="name">Name</label><input type="text" name="name" id="name"/></div>
+            <button class='pure-button notice' id='submit' type='submit'>Submit</button>
+         </fieldset>
 
-            <label for="email">Email</label><input type="text" name="email" id="email"/></div>
+            </form></div>
 
-            <label for="number">viewing distance</label><input type="number" name="distance" id="distance"/></div>
-
-            <label for="Resolution">Resolution</label>
-                <select id="resolution" name="resolution">
-                 <option value="480p">480p</option>
-                 <option value="720p">720p</option>
-                 <option value="1080p">1080p</option>
-                 <option value="4K Ultra">4K Ultra</option>
-             </select>
-             <input id="submit" type="submit"/><input type="reset" />
-            </form>
-        """
-        self.close = """
-                </body>
-            </html>
             """
+        self.close = """
+            </div>
+        </body>
+        </html>
 
-    #Function to print out the form to the browser
+            """
+    #Function to print results in the browser
     def print_out(self):
         all = self.head + self.body + self.close
         all = all.format(**locals())
         return all
+
 
 class Results(object):
     def __init__(self):
