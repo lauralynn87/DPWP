@@ -44,8 +44,8 @@ class Form(object):
                     <input id="distance" name="distance" placeholder="distance" type="text">
                 </div>
                 <div>
-                    <label for="howfound">Preferred Resolution</label>
-                        <select  name="resolution" class="select">
+                    <label>Preferred Resolution</label>
+                        <select name="resolution" class="select">
                             <option value="480p" name="480p">480p</option>
                             <option value="720p" name="720p">720p</option>
                             <option value="1080p" name="1080p">1080p</option>
@@ -54,7 +54,7 @@ class Form(object):
                 </div>
 
             <button class="pure-button notice" id="submit" type="submit">Submit</button>
-         </fieldset>
+            </fieldset>
 
             </form></div>
 
@@ -100,7 +100,7 @@ class Results(object):
 
             <p>Resolution Check:<span>{resolution}</span></p>
 
-            <p>This information is based on the viewing distance of <span>{distance}</> inches.</p>
+            <p>This information is based on the viewing distance of <span>{distance}</span> inches.</p>
 
             <p class="happy">Happy Shopping!</p>
             </div>

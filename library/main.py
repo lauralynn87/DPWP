@@ -9,14 +9,13 @@ Date: 03/18/15
 import webapp2
 
 #Necessary Imports
-from pages import Form
-from pages import Results
+from pages import Form, Results
 from library import TvSize
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         f = Form()
-        r = Results
+        r = Results()
 
         #Gets the data the user entered from form
         if self.request.GET:
@@ -36,10 +35,6 @@ class MainHandler(webapp2.RequestHandler):
 
         else:
             self.response.write(f.print_out())
-
-
-
-
 
 
 
