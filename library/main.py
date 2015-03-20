@@ -10,6 +10,7 @@ import webapp2
 
 #Necessary Imports
 from pages import Form
+from pages import Results
 from library import TvSize
 
 class MainHandler(webapp2.RequestHandler):
@@ -22,10 +23,16 @@ class MainHandler(webapp2.RequestHandler):
             email = self.request.GET['email']
             resolution = self.request.GET['resolution']
             distance = self.request.GET['distance']
+
         #Create Instance to send info to library
             lib = TvSize()
             lib.distance = distance
             lib.resolution = resolution
+            new_min_size = lib.min_size() #creating a variable min_size
+            new_max_size = lib.max_size() #creating a variable max_size
+        else:
+            self.response.write(f.print_out())
+
 
 
 
