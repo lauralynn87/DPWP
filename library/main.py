@@ -29,10 +29,11 @@ class MainHandler(webapp2.RequestHandler):
             lib.resolution = resolution
             new_min_size = lib.min_size() #creating a variable min_size
             new_max_size = lib.max_size() #creating a variable max_size
+            resolution_check = lib.reso()
 
             r.name = name
             r.distance = distance
-            r.resolution = resolution
+            r.resolution = resolution_check
             r.new_min_size = new_min_size
             r.new_max_size = new_max_size
 
