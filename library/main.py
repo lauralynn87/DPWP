@@ -30,6 +30,12 @@ class MainHandler(webapp2.RequestHandler):
             new_min_size = lib.min_size() #creating a variable min_size
             new_max_size = lib.max_size() #creating a variable max_size
 
+            r.name = name
+            r.distance = distance
+            r.resolution = resolution
+            r.new_min_size = new_min_size
+            r.new_max_size = new_max_size
+
             #Prints page with form data
             self.response.write(r.print_out())
 

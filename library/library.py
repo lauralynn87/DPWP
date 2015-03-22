@@ -21,7 +21,7 @@ class TvSize(object):
         max = int(self.distance)/1.5
         return max
 
-    def reso(self):
+    def resolution_check(self):
         # First checks to see if user data is less than 42 inches - if so will print message.
         # Than checks to see what resolution user selected if they selected 4K Ultra than the message 'You have chosen the recommended resolution'
         if (self._distance < 42 and (self._resolution == "480p" or "720p" or "1080p")):

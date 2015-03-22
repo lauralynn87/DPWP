@@ -73,15 +73,12 @@ class Form(object):
 
 
 class Results(object):
-    def __init__(self, name, distance, resolution, new_min_size, new_max_size):
-        result_name = self.name
-        result_distance = self.distance
-        result_resolution = self.resolution
-        self.name = name
-        self.distance = distance
-        self.resolution = resolution
-        self.new_min_size = new_min_size
-        self.new_max_size = new_max_size
+    def __init__(self):
+        self.name = ''
+        self.distance = ''
+        self.resolution = ''
+        self.new_min_size = ''
+        self.new_max_size = ''
         self.css = "css/styles.css"
         self.head = """
         <!DOCTYPE HTML>
@@ -108,7 +105,7 @@ class Results(object):
 
             <p>Resolution Check:<span>{self.resolution}</span></p>
 
-            <p>This information is based on the viewing distance of <span>{distance}</span> inches.</p>
+            <p>This information is based on the viewing distance of <span>{self.distance}</span> inches.</p>
 
             <p class="happy">Happy Shopping!</p>
             </div>
@@ -121,7 +118,7 @@ class Results(object):
             """
 
     #Function to print results in the browser
-    def print_out(self, result_name):
+    def print_out(self):
         all = self.head + self.body + self.close
         all = all.format(**locals())
         return all
