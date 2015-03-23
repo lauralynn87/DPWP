@@ -74,11 +74,14 @@ class Form(object):
 
 class Results(object):
     def __init__(self):
+        #Attributes - values are assigned in main.py
         self.name = ''
         self.distance = ''
         self.resolution = ''
         self.new_min_size = ''
         self.new_max_size = ''
+
+        #Attributes holding the HTML code
         self.css = "css/styles.css"
         self.head = """
         <!DOCTYPE HTML>
