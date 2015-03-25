@@ -8,9 +8,17 @@ Date: 03/25/15
 #DO NOT TOUCH
 import webapp2
 
+#Necessary Imports
+from pages import Page, ContentPage
+from data import Portfolio
+
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        p = Page()
+        c = ContentPage()
+        f = Portfolio()
+
+        #
 
 
 
