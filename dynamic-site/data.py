@@ -41,11 +41,29 @@ class Data(object):
 
         #Websites Instance
         websites = Portfolio()
+        websites.item1 = ""
+        websites.item2 = ""
+        websites.item3 = ""
+        websites.item4 = ""
+        websites.item5 = ""
+        websites.item6 = ""
 
         #Print Designs Instance
         print_designs = Portfolio()
+        print_designs.item1 = ""
+        print_designs.item2 = ""
+        print_designs.item3 = ""
+        print_designs.item4 = ""
+        print_designs.item5 = ""
+        print_designs.item6 = ""
 
         #Pacakage Designs Instance
         package_designs = Portfolio()
+        package_designs.item1 = ""
+        package_designs.item2 = ""
+        package_designs.item3 = ""
+        package_designs.item4 = ""
+        package_designs.item5 = ""
+        package_designs.item6 = ""
 
 

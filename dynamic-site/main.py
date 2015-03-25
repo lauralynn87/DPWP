@@ -21,9 +21,9 @@ class MainHandler(webapp2.RequestHandler):
         #the if/else function telling the browser what to load based on what the user clicks
         if self.request.GET:
             portfolio_filter = Portfolio()
-            portfolio_filter = self.request.GET['portfolio_filter']
+            portfolio_filter = self.request.GET['portfolio-filter']
 
-            if portfolio_filter == "show_all":
+            if portfolio_filter == "show-all":
                 portfolio_filter = show_all
 
             elif portfolio_filter == "logos":
