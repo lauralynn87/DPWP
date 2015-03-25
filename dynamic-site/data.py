@@ -8,11 +8,15 @@ Date: 03/25/15
 class Portfolio(object):
     def __init__(self):
         # Sets up the attributes to be called by the objects
-        self.show_all = ""
-        self.logos = ""
-        self.websites = ""
-        self.print_designs = ""
-        self.package_designs = ""
+        self.item1 = ""
+        self.item2 = ""
+        self.item3 = ""
+        self.item4 = ""
+        self.item5 = ""
+        self.item6 = ""
+        self.title = ""
+        self.description = ""
+        self.project_type = ""
 
 class Data(object):
     def __init__(self):
