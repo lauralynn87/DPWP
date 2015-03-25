@@ -19,24 +19,24 @@ class MainHandler(webapp2.RequestHandler):
         f = Portfolio()
 
         #the if/else function telling the browser what to load based on what the user clicks
-        if  self.request.GET:
-            portolio_filter = Portfolio()
-            portolio_filter = self.request.GET['portfolio_filter']
+        if self.request.GET:
+            portfolio_filter = Portfolio()
+            portfolio_filter = self.request.GET['portfolio_filter']
 
-            if portolio_filter == "show_all":
-                portolio_filter = show_all
+            if portfolio_filter == "show_all":
+                portfolio_filter = show_all
 
-            elif portolio_filter == "logos":
-                portolio_filter = logos
+            elif portfolio_filter == "logos":
+                portfolio_filter = logos
 
-            elif portolio_filter == "websites":
-                portolio_filter = websites
+            elif portfolio_filter == "websites":
+                portfolio_filter = websites
 
-            elif portolio_filter == "print-designs":
-                portolio_filter = print_designs
+            elif portfolio_filter == "print-designs":
+                portfolio_filter = print_designs
 
-            elif portolio_filter == "package-designs":
-                portolio_filter = package_designs
+            elif portfolio_filter == "package-designs":
+                portfolio_filter = package_designs
 
         else:
             self.response.write(c.print_out())

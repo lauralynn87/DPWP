@@ -17,19 +17,27 @@ class Portfolio(object):
         self.item5 = ""
         self.item6 = ""
 
-        #these will display below each image...
-        self.title = ""
-        self.description = ""
-        self.project_type = ""
 
 class Data(object):
     def __init__(self):
 
         #Show All Instance
         show_all = Portfolio()
+        show_all.item1 = ""
+        show_all.item2 = ""
+        show_all.item3 = ""
+        show_all.item4 = ""
+        show_all.item5 = ""
+        show_all.item6 = ""
 
         #Logos Instance
         logos = Portfolio()
+        logos.item1 = ""
+        logos.item2 = ""
+        logos.item3 = ""
+        logos.item4 = ""
+        logos.item5 = ""
+        logos.item6 = ""
 
         #Websites Instance
         websites = Portfolio()
