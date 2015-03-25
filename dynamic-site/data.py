@@ -8,12 +8,16 @@ Date: 03/25/15
 class Portfolio(object):
     def __init__(self):
         # Sets up the attributes to be called by the objects
+
+        #items will be the images
         self.item1 = ""
         self.item2 = ""
         self.item3 = ""
         self.item4 = ""
         self.item5 = ""
         self.item6 = ""
+
+        #these will display below each image...
         self.title = ""
         self.description = ""
         self.project_type = ""
