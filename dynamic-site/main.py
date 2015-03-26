@@ -43,18 +43,6 @@ class MainHandler(webapp2.RequestHandler):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 #DO NOT WRITE BELOW THIS LINE - needed for google app engine launcher
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
