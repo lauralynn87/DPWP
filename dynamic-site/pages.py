@@ -11,9 +11,24 @@ class Page(object):
         self.css = "css/styles.css"
         #Meta Tags
         self.head = """
+
+        <!DOCTYPE>
+<html>
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>LauraLynn Designs</title>
+</head>
+<body>
                 """
         #opening containers go here
         self.body = """
+        <section class="hero">
+</section>
+<!-- end of hero section -->
+<div class="quote"><div><p>Just build websites ~ CHRIS COYIER</p>
+</div></div>
                 """
         #Footer and Closing DIVS
         self.close = """
