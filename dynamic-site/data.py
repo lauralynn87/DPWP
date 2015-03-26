@@ -10,60 +10,117 @@ class Portfolio(object):
         # Sets up the attributes to be called by the objects
 
         #items will be the images
+        #Portfolio Attributes
         self.item1 = ""
+        self.title1 = ""
+        self.project1 = ""
+        self.desc1 = "" #description
+
         self.item2 = ""
+        self.title2 = ""
+        self.project2 = ""
+        self.desc2 = "" #description
+
         self.item3 = ""
-        self.item4 = ""
-        self.item5 = ""
-        self.item6 = ""
+        self.title3 = ""
+        self.project3 = ""
+        self.desc3 = "" #description
 
 
-class Filters(object):
+class Data(object):
     def __init__(self):
 
         #Show All Instance
         show_all = Portfolio()
-        show_all.item1 = ""
-        show_all.item2 = ""
-        show_all.item3 = ""
-        show_all.item4 = ""
-        show_all.item5 = ""
-        show_all.item6 = ""
+        #Item 1
+        show_all.item1 = "images/img-1.jpg"
+        show_all.title1 = "Project Title 1"
+        show_all.project1 = "Logo"
+        show_all.desc1 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        #Item 2
+        show_all.item2 = "images/img-2.jpg"
+        show_all.title2 = "Project Title 2"
+        show_all.project2 = "Website"
+        show_all.desc2 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        #Item 3
+        show_all.item3 = "images/img-3.jpg"
+        show_all.title3 = "Project Title 3"
+        show_all.project3 = "Print"
+        show_all.desc3 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
 
         #Logos Instance
         logos = Portfolio()
-        logos.item1 = ""
-        logos.item2 = ""
-        logos.item3 = ""
-        logos.item4 = ""
-        logos.item5 = ""
-        logos.item6 = ""
+         #Item 1
+        logos.item1 = "images/img-1.jpg"
+        logos.title1 = "Project Title"
+        logos.project1 = "Logo"
+        logos.desc1 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        #Item 2
+        logos.item2 = "images/img-2.jpg"
+        logos.title2 = "Project Title"
+        logos.project2 = "Logo"
+        logos.desc2 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        #Item 3
+        logos.item3 = "images/img-3.jpg"
+        logos.title3 = "Project Title"
+        logos.project3 = "Logo"
+        logos.desc3 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+
 
         #Websites Instance
         websites = Portfolio()
-        websites.item1 = ""
-        websites.item2 = ""
-        websites.item3 = ""
-        websites.item4 = ""
-        websites.item5 = ""
-        websites.item6 = ""
+         #Item 1
+        websites.item1 = "images/img-1.jpg"
+        websites.title1 = "Project Title"
+        websites.project1 = "Logo"
+        websites.desc1 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        #Item 2
+        websites.item2 = "images/img-2.jpg"
+        websites.title2 = "Project Title"
+        websites.project2 = "Logo"
+        websites.desc2 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        #Item 3
+        websites.item3 = "images/img-3.jpg"
+        websites.title3 = "Project Title"
+        websites.project3 = "Logo"
+        websites.desc3 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
 
         #Print Designs Instance
         print_designs = Portfolio()
-        print_designs.item1 = ""
-        print_designs.item2 = ""
-        print_designs.item3 = ""
-        print_designs.item4 = ""
-        print_designs.item5 = ""
-        print_designs.item6 = ""
+         #Item 1
+        print_designs.item1 = "images/img-1.jpg"
+        print_designs.title1 = "Project Title"
+        print_designs.project1 = "Logo"
+        print_designs.desc1 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        #Item 2
+        print_designs.item2 = "images/img-2.jpg"
+        print_designs.title2 = "Project Title"
+        print_designs.project2 = "Logo"
+        print_designs.desc2 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        #Item 3
+        print_designs.item3 = "images/img-3.jpg"
+        print_designs.title3 = "Project Title"
+        print_designs.project3 = "Logo"
+        print_designs.desc3 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+
 
         #Pacakage Designs Instance
         package_designs = Portfolio()
-        package_designs.item1 = ""
-        package_designs.item2 = ""
-        package_designs.item3 = ""
-        package_designs.item4 = ""
-        package_designs.item5 = ""
-        package_designs.item6 = ""
+         #Item 1
+        package_designs.item1 = "images/img-1.jpg"
+        package_designs.title1 = "Project Title"
+        package_designs.project1 = "Logo"
+        package_designs.desc1 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        #Item 2
+        package_designs.item2 = "images/img-2.jpg"
+        package_designs.title2 = "Project Title"
+        package_designs.project2 = "Logo"
+        package_designs.desc2 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        #Item 3
+        package_designs.item3 = "images/img-3.jpg"
+        package_designs.title3 = "Project Title"
+        package_designs.project3 = "Logo"
+        package_designs.desc3 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
 
 
+        self.filters = [show_all, logos, websites, print_designs, package_designs]
