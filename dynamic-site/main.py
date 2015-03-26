@@ -10,7 +10,7 @@ import webapp2
 
 #Necessary Imports
 from pages import Page, ContentPage
-from data import Portfolio, Data
+from data import Portfolio, Filters
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):

@@ -18,7 +18,7 @@ class Portfolio(object):
         self.item6 = ""
 
 
-class Data(object):
+class Filters(object):
     def __init__(self):
 
         #Show All Instance
