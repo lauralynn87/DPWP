@@ -51,17 +51,17 @@ class Data(object):
         #Logos Instance
         logos = Portfolio()
          #Item 1
-        logos.item1 = "images/img-1.jpg"
+        logos.item1 = "images/logo-1.jpg"
         logos.title1 = "Project Title"
         logos.project1 = "Identity Design"
         logos.desc1 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         #Item 2
-        logos.item2 = "images/img-2.jpg"
+        logos.item2 = "images/logo-2.jpg"
         logos.title2 = "Project Title"
         logos.project2 = "Logo Design"
         logos.desc2 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         #Item 3
-        logos.item3 = "images/img-3.jpg"
+        logos.item3 = "images/logo-3.jpg"
         logos.title3 = "Project Title"
         logos.project3 = "Brand Design"
         logos.desc3 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."

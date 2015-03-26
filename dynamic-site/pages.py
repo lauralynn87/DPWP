@@ -46,46 +46,47 @@ class Page(object):
             <div class="cl-4"><img src="images/2.png" alt=""></div>
         </div>
         </section> <!-- end of about section -->
-
+        """
+        self.portfolio = """
                  <section class="portfolio">
         <div class="container">
-        <div class="cl-4"><img src="images/3.png" alt=""></div>
-        <div class="cl-8">
-            <ul class="filters">
-                <li class="active"><a href="?filters=show-all" title="" name="show-all">SHOW ALL</a></li>
-                <li><a href="?filters=logos" title="" name="logos">LOGOS</a></li>
-                <li><a href="?filters=websites" title="" name="websites">WEBSITES</a></li>
-                <li><a href="?filters=print-designs" title="" name="print-designs">PRINT DESIGNS</a></li>
-                <li><a href="?filters=package-designs" title="" name="package-designs">PACKAGE DESIGNS</a></li>
-            </ul>
-        </div>
-        </div>
-
-        <div class="container">
-            <div class="rw">
-                <div class="cl-3">
-                    <img src="images/img-4.jpg" alt="">
-                    <h3>Title 1</h3>
-                    <p>Illustration</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-                <div class="cl-3">
-                    <img src="images/img-5.jpg" alt="">
-                    <h3>Title 2</h3>
-                    <p>Design</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-                <div class="cl-3">
-                    <img src="images/img-6.jpg" alt="">
-                    <h3>Title 3</h3>
-                    <p>Art</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
+            <div class="cl-4"><img src="images/3.png" alt=""></div>
+            <div class="cl-8">
+                <ul class="filters">
+                    <li><a href="?filters=show-all" title="" name="show-all">SHOW ALL</a></li>
+                    <li><a href="?filters=logos" title="" name="logos">LOGOS</a></li>
+                    <li><a href="?filters=websites" title="" name="websites">WEBSITES</a></li>
+                    <li><a href="?filters=print-designs" title="" name="print-designs">PRINT DESIGNS</a></li>
+                    <li><a href="?filters=package-designs" title="" name="package-designs">PACKAGE DESIGNS</a></li>
+                </ul>
             </div>
         </div>
 
+        <div class="container">
+<div class="cl-3">
+	<img src="images/img-4.jpg" alt="">
+	<h3>Simply Welness Coaching</h3>
+	<p>Project: Wordpress Project</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+<div class="cl-3">
+	<img src="images/img-5.jpg" alt="">
+	<h3>Simply Welness Coaching</h3>
+	<p>Project: Wordpress Project</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+<div class="cl-3">
+	<img src="images/img-6.jpg" alt="">
+	<h3>Simply Welness Coaching</h3>
+	<p>Project: Wordpress Project</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        """
 
-                """
         #Footer and Closing DIVS
         self.close = """
         <section class="contact"><div class="container">
@@ -106,7 +107,7 @@ class Page(object):
                 """
 
     def print_out(self):
-        all = self.head + self.body + self.close
+        all = self.head + self.body + self.portfolio + self.close
         all = all.format(**locals())
         return all
 
@@ -132,13 +133,13 @@ class ContentPage(Page):
         self.desc3 = "" #description
 
         #Portfolio Navigation Section Here
-        self.filter = """
+        self.filters = """
          <section class="portfolio">
         <div class="container">
         <div class="cl-4"><img src="images/3.png" alt=""></div>
         <div class="cl-8">
             <ul class="filters">
-                <li class="active"><a href="?filters=show-all" title="" name="show-all">SHOW ALL</a></li>
+                <li><a href="?filters=show-all" title="" name="show-all">SHOW ALL</a></li>
                 <li><a href="?filters=logos" title="" name="logos">LOGOS</a></li>
                 <li><a href="?filters=websites" title="" name="websites">WEBSITES</a></li>
                 <li><a href="?filters=print-designs" title="" name="print-designs">PRINT DESIGNS</a></li>
@@ -174,7 +175,7 @@ class ContentPage(Page):
 
     #Polymorphism - method overriding
     def print_out(self):
-        all = self.head + self.body + self.filter + self.close
+        all = self.head + self.body + self.filters + self.close
         all = all.format(**locals())
         return all
 

@@ -32,7 +32,7 @@ class MainHandler(webapp2.RequestHandler):
                 c.title3 = d.filters[0].title3
                 c.project1 = d.filters[0].project1
                 c.project2 = d.filters[0].project2
-                c.project2 = d.filters[0].project2
+                c.project3 = d.filters[0].project3
                 c.desc1 = d.filters[0].desc1
                 c.desc2 = d.filters[0].desc2
                 c.desc3 = d.filters[0].desc3
@@ -46,7 +46,7 @@ class MainHandler(webapp2.RequestHandler):
                 c.title3 = d.filters[1].title3
                 c.project1 = d.filters[1].project1
                 c.project2 = d.filters[1].project2
-                c.project2 = d.filters[1].project2
+                c.project3 = d.filters[1].project3
                 c.desc1 = d.filters[1].desc1
                 c.desc2 = d.filters[1].desc2
                 c.desc3 = d.filters[1].desc3
@@ -60,7 +60,7 @@ class MainHandler(webapp2.RequestHandler):
                 c.title3 = d.filters[2].title3
                 c.project1 = d.filters[2].project1
                 c.project2 = d.filters[2].project2
-                c.project2 = d.filters[2].project2
+                c.project3 = d.filters[2].project3
                 c.desc1 = d.filters[2].desc1
                 c.desc2 = d.filters[2].desc2
                 c.desc3 = d.filters[2].desc3
@@ -74,7 +74,7 @@ class MainHandler(webapp2.RequestHandler):
                 c.title3 = d.filters[3].title3
                 c.project1 = d.filters[3].project1
                 c.project2 = d.filters[3].project2
-                c.project2 = d.filters[3].project2
+                c.project3 = d.filters[3].project3
                 c.desc1 = d.filters[3].desc1
                 c.desc2 = d.filters[3].desc2
                 c.desc3 = d.filters[3].desc3
@@ -88,7 +88,7 @@ class MainHandler(webapp2.RequestHandler):
                 c.title3 = d.filters[4].title3
                 c.project1 = d.filters[4].project1
                 c.project2 = d.filters[4].project2
-                c.project2 = d.filters[4].project2
+                c.project3 = d.filters[4].project3
                 c.desc1 = d.filters[4].desc1
                 c.desc2 = d.filters[4].desc2
                 c.desc3 = d.filters[4].desc3
