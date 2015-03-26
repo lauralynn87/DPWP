@@ -17,7 +17,7 @@ class Page(object):
 <head>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="{self.css}">
 	<title>LauraLynn Designs</title>
 </head>
 <body>
@@ -54,7 +54,7 @@ class Page(object):
         return all
 
 #Will Hold
-class ContentPage(object):
+class ContentPage(Page):
     def __init__(self):
         super(Page, self)._init_()
 
@@ -88,15 +88,17 @@ class ContentPage(object):
 	<div class="cl-4"><img src="images/3.png" alt=""></div>
 	<div class="cl-8">
 		<ul class="filters">
-			<li id="show-all" class="active"><a href="#" title="" name="show-all">SHOW ALL</a></li>
-			<li id="logos"><a href="#" title="" name="logos">LOGOS</a></li>
-			<li id="websites"><a href="#" title="" name="websites">WEBSITES</a></li>
-			<li id="print-designs"><a href="#" title="" name="print">PRINT DESIGNS</a></li>
-			<li id="package-designs"><a href="#" title="" name="page-design">PACKAGE DESIGNS</a></li>
+			<li class="active"><a href="#show-all" title="" name="show-all">SHOW ALL</a></li>
+			<li><a href="#logos" title="" name="logos">LOGOS</a></li>
+			<li><a href="#websites" title="" name="websites">WEBSITES</a></li>
+			<li><a href="#print-designs" title="" name="print-designs">PRINT DESIGNS</a></li>
+			<li><a href="#package-designs" title="" name="package-designs">PACKAGE DESIGNS</a></li>
 		</ul>
 	</div>
 </div>
         """
+
+
 
 
     #Polymorphism - method overriding
