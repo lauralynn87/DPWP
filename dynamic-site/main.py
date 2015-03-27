@@ -24,7 +24,7 @@ class MainHandler(webapp2.RequestHandler):
             portfolio_filter = self.request.GET['filters']
 
             if portfolio_filter == "show-all":
-                c.item1 = d.filters[0].item2
+                c.item1 = d.filters[0].item1
                 c.item2 = d.filters[0].item2
                 c.item3 = d.filters[0].item3
                 c.title1 = d.filters[0].title1

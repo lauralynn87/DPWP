@@ -64,21 +64,21 @@ class Page(object):
 
         <div class="container">
 <div class="cl-3">
-	<img src="images/img-4.jpg" alt="">
+	<img src="images/print2.jpg" alt="">
 	<h3>Simply Welness Coaching</h3>
 	<p>Project: Wordpress Project</p>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua.</p>
 </div>
 <div class="cl-3">
-	<img src="images/img-5.jpg" alt="">
+	<img src="images/package1.jpg" alt="">
 	<h3>Simply Welness Coaching</h3>
 	<p>Project: Wordpress Project</p>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua.</p>
 </div>
 <div class="cl-3">
-	<img src="images/img-6.jpg" alt="">
+	<img src="images/logo-1.jpg" alt="">
 	<h3>Simply Welness Coaching</h3>
 	<p>Project: Wordpress Project</p>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
